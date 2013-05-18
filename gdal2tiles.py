@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # 
 # MODDED GDAL2TILES
-# This version won't create incomplete tiles
+# This version won't create incomplete tiles and outputs JPEGs
 #
 #******************************************************************************
 #  $Id: gdal2tiles.py 15748 2008-11-17 16:30:54Z klokan $
@@ -508,8 +508,8 @@ class GDAL2Tiles(object):
 
         # Tile format
         self.tilesize = 256
-        self.tiledriver = 'PNG'
-        self.tileext = 'png'
+        self.tiledriver = 'JPEG'
+        self.tileext = 'jpg'
         
         # Should we read bigger window of the input raster and scale it down?
         # Note: Modified leter by open_input()
